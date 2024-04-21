@@ -19,7 +19,7 @@ body {
 }
 
 .header-items {
-  padding: 35px 40px;
+  padding: 35px 40px 25px 40px;
 }
 
 .company-logo img {
@@ -35,11 +35,12 @@ body {
 }
 
 /* Button Style */
-.nav-item:last-child button {
+.nav-item:last-child button,
+.item-button button {
   padding: 9px 35px;
   background-color: transparent;
   border: 1px solid #7f8691;
-  color: #ffffff;
+  color: #edeeef;
   font-size: 15px;
   font-weight: 500;
   border-radius: 3px;
@@ -52,7 +53,7 @@ body {
   }
 
   .header-item:last-child i {
-    color: #ffffff;
+    color: #edeeef;
     font-size: 23px;
   }
 }
@@ -65,7 +66,7 @@ body {
 
   .nav-items li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #edeeef;
     font-weight: 400;
   }
 
@@ -94,4 +95,42 @@ body {
   .nav-items .nav-item:last-child {
     margin-left: 75px;
   }
+}
+
+/*Hero-Section Global Style  */
+.hero-container {
+  padding: 30px 70px 65px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-item-1 {
+  width: 50%;
+  flex: 5;
+}
+
+.hero-item-2 {
+  flex: 5;
+}
+
+.hero-item-1 img {
+  width: auto;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.item-heading h1 {
+  color: #edeeef;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.item-paragraph {
+  color: #edeeef;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: justify;
+  letter-spacing: 0.1em;
+  line-height: 1.8em;
 }

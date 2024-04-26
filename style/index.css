@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+/* Gobal Style */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +11,65 @@
 
 body {
   font-family: "Raleway", sans-serif;
+}
+
+/* 
+width - 425px - 30px - 13
+width - 768px - 42px - 16
+rest - 50px - 18
+*/
+
+/* For Heading and Paragraph */
+/* Base styles for larger screens */
+.item-heading h1,
+.business-statistic-header h1 {
+  color: #1b1d21;
+  margin-bottom: 20px;
+}
+
+/* Medium screens (tablets, etc.) */
+@media screen and (min-width: 768px) {
+
+  .item-heading h1,
+  .business-statistic-header h1 {
+    font-size: 42px;
+  }
+}
+
+/* Small screens (large phones, etc.) */
+@media screen and (max-width: 425px) {
+
+  .item-heading h1,
+  .business-statistic-header h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .item-heading h1,
+  .business-statistic-header h1 {
+    font-size: 30px;
+  }
+}
+
+/* Extra Small Screens */
+@media screen and (max-width: 320px) {
+
+  .item-heading h1,
+  .business-statistic-header h1 {
+    font-size: 23px;
+  }
+}
+
+
+/* For Paragraph */
+.item-paragraph {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: justify;
+  letter-spacing: 0.1em;
+  line-height: 1.8em;
 }
 
 /* Navigation Global Styles */
@@ -113,7 +172,8 @@ body {
   padding: 10px;
 }
 
-.hero-item-1 img {
+.hero-item-1 img,
+.business-statistic-img img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -121,20 +181,11 @@ body {
 
 .item-heading h1 {
   color: #ffffff;
-  font-size: 55px;
-  margin-bottom: 10px;
 }
 
 .item-paragraph {
   color: #edeeef;
-  font-size: 16px;
-  margin-bottom: 20px;
-  text-align: justify;
-  letter-spacing: 0.1em;
-  line-height: 1.8em;
 }
-
-
 
 @media screen and (max-width: 1024px) {
   .header-items {
@@ -153,8 +204,6 @@ body {
 
   .item-heading h1 {
     color: #ffffff;
-    font-size: 30px;
-    margin-bottom: 10px;
   }
 
   .item-paragraph {
@@ -204,3 +253,23 @@ body {
     position: absolute;
   }
 }
+
+/* Business Statistic Style */
+/* .business-statistic-container {
+  padding: 30px 70px 30px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.business-statistic-header h1{
+  text-align: center;
+}
+
+.business-statistic-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+} */

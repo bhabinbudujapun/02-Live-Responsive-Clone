@@ -19,7 +19,7 @@ body {
 }
 
 .header-items {
-  padding: 35px 40px 25px 40px;
+  padding: 25px 40px 25px 40px;
 }
 
 .company-logo img {
@@ -99,29 +99,28 @@ body {
 
 /*Hero-Section Global Style  */
 .hero-container {
-  padding: 30px 70px 65px 70px;
+  padding: 10px 70px 65px 70px;
+}
+
+.hero-items {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 30px;
 }
 
-.hero-item-1 {
-  width: 50%;
-  flex: 5;
-}
-
-.hero-item-2 {
-  flex: 5;
+.hero-item {
+  flex: 1;
+  padding: 10px;
 }
 
 .hero-item-1 img {
-  width: auto;
-  height: 70vh;
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .item-heading h1 {
-  color: #edeeef;
+  color: #ffffff;
   font-size: 55px;
   margin-bottom: 10px;
 }
@@ -133,4 +132,75 @@ body {
   text-align: justify;
   letter-spacing: 0.1em;
   line-height: 1.8em;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .header-items {
+    padding-bottom: 15px;
+  }
+
+  .hero-container {
+    padding: 0px 50px 10px 50px;
+  }
+
+  .hero-items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .item-heading h1 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .item-paragraph {
+    color: #edeeef;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    line-height: 1.8em;
+  }
+}
+
+/* Hero-Section Button Below 510px */
+.item-button button {
+  background-color: #8bb7a2;
+  font-weight: 600;
+  padding: 15px 35px;
+  letter-spacing: 0.05rem;
+  border-color: transparent;
+  right: 3px;
+  top: 5px;
+}
+
+/* Hero-Section Button */
+@media screen and (min-width: 510px) {
+  .item-button {
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+
+  .item-button::before {
+    content: "\f0e0";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  .item-button::after {
+    padding-left: 10px;
+    content: 'Enter you email address';
+    font-size: 14px;
+    color: #a0a1a2;
+  }
+
+  .item-button button {
+    cursor: pointer;
+    position: absolute;
+  }
 }

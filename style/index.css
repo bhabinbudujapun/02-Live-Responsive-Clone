@@ -15,7 +15,8 @@ body {
 
 /* Base styles for larger screens */
 .item-heading h1,
-.business-statistic-header h1 {
+.business-statistic-header h1,
+.service-header h1 {
   color: #1b1d21;
   margin-bottom: 30px;
 }
@@ -24,7 +25,8 @@ body {
 @media screen and (min-width: 768px) {
 
   .item-heading h1,
-  .business-statistic-header h1 {
+  .business-statistic-header h1,
+  .service-header h1 {
     font-size: 42px;
   }
 }
@@ -33,7 +35,8 @@ body {
 @media screen and (max-width: 425px) {
 
   .item-heading h1,
-  .business-statistic-header h1 {
+  .business-statistic-header h1,
+  .service-header h1 {
     font-size: 36px;
   }
 
@@ -47,7 +50,8 @@ body {
 @media screen and (max-width: 375px) {
 
   .item-heading h1,
-  .business-statistic-header h1 {
+  .business-statistic-header h1,
+  .service-header h1 {
     font-size: 30px;
   }
 }
@@ -56,7 +60,8 @@ body {
 @media screen and (max-width: 320px) {
 
   .item-heading h1,
-  .business-statistic-header h1 {
+  .business-statistic-header h1,
+  .service-header h1 {
     font-size: 23px;
   }
 }
@@ -156,23 +161,28 @@ body {
 }
 
 /*Hero-Section Global Style  */
-.hero-container {
+.hero-container,
+.service-container {
   padding: 10px 70px 65px 70px;
 }
 
-.hero-items {
+.hero-items,
+.service-items,
+.service-section .service-container:nth-child(2) .service-items {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.hero-item {
+.hero-item,
+.service-item {
   flex: 1;
   padding: 10px;
 }
 
 .hero-item-1 img,
-.business-statistic-img img {
+.business-statistic-img img,
+.service-item-1 img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -191,11 +201,14 @@ body {
     padding-bottom: 15px;
   }
 
-  .hero-container {
+  .hero-container,
+  .service-container {
     padding: 0px 50px 10px 50px;
   }
 
-  .hero-items {
+  .hero-items,
+  .service-items,
+  .service-section .service-container:nth-child(2) .service-items {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -216,6 +229,7 @@ body {
 }
 
 /* Hero-Section Button Below 510px */
+.service-button button,
 .item-button button {
   background-color: #8bb7a2;
   font-weight: 600;
@@ -256,6 +270,7 @@ body {
 /* Business Statistic Style */
 .business-statistic-container {
   padding: 70px 70px 30px 70px;
+  margin-bottom: 50px;
 }
 
 .business-statistic-header h1 {
@@ -317,5 +332,29 @@ body {
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   .another-circle {
     display: none;
+  }
+}
+
+/* Company Services */
+.service-item .item-heading h1 {
+  color: #000000;
+}
+
+.service-item .item-paragraph p {
+  color: #1b1d21;
+}
+
+.service-button button {
+  color: #ffffff;
+}
+
+.service-header h1 {
+  text-align: center;
+}
+
+@media screen and (min-width: 1025px) {
+  .service-section .service-container:nth-child(2) .service-items {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }

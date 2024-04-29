@@ -92,8 +92,8 @@ body {
 }
 
 .company-logo img {
-  width: 80px;
-  height: 30px;
+  width: 100px;
+  height: 38px;
 }
 
 .header-items {
@@ -403,12 +403,14 @@ body {
 @media screen and (min-width: 540px) and (max-width: 900px) {
 
   .team-member-img,
-  .team-member-name,
-  .team-member-about {
+  .team-member-name {
     display: flex;
     justify-content: center;
   }
 
+  .team-member-about p {
+    text-align: center;
+  }
 }
 
 .company-team-members {
@@ -419,7 +421,7 @@ body {
 
 .company-team-member {
   flex: 1;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
 }
 
 .team-member-img img {
@@ -429,4 +431,70 @@ body {
 .team-member-button {
   display: flex;
   justify-content: center;
+}
+
+/* Footer Container */
+
+.footer-section {
+  background-color: #10181d;
+  padding: 50px 50px 100px 50px;
+}
+
+.footer-section-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.company-social-handle i {
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #282f34;
+}
+
+.company-social-handle i:not(:last-child) {
+  margin-right: 10px;
+}
+
+hr {
+  border: 1px solid #2f373c;
+  margin: 50px 0px;
+}
+
+.footer-item-heading h3 {
+  color: #ebecec;
+  margin-bottom: 20px;
+}
+
+.footer-item-lists li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.footer-item-list a {
+  text-decoration: none;
+  color: #a4a7aa;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* For Small Screens(phones . .) */
+@media screen and (max-width: 425px) {
+  .footer-items {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 900px) {
+  .footer-item {
+    flex: 0 0 48%;
+  }
 }
